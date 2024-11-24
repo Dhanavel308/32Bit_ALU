@@ -1,3 +1,4 @@
+
 # 32Bit_ALU Simulation
 
 # Aim: 
@@ -59,6 +60,7 @@ source /cadence/install/cshrc (mention the path of the tools)
 (The path of cshrc could vary depending on the installation destination)
       
 After this you can see the window like below 
+![WhatsApp Image 2024-11-24 at 11 27 41_ef2dfcc5](https://github.com/user-attachments/assets/c7e6e423-808d-4a0f-8f38-2a1ede48c787)
 
 ### Fig 2: Invoke the Cadence Environment
 
@@ -72,12 +74,15 @@ or
 
 
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple Step .
+![WhatsApp Image 2024-11-24 at 11 27 42_76496d28](https://github.com/user-attachments/assets/e6f49461-6e45-4d09-bdd1-32730a27cd51)
 
 ### Fig 3: Setting Multi-step simulation
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure 
 
 Click the cds.lib file and save the file by clicking on Save option 
+![WhatsApp Image 2024-11-24 at 11 27 42_5f24e92a](https://github.com/user-attachments/assets/12ad9f6f-d94b-4a9e-8809-7c0b83772cf9)
+
 
 ### Fig 4:cds.lib file Creation
 
@@ -85,11 +90,11 @@ Save cds.lib file and select the correct option for cds.lib file format based on
 
 Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure .
 
-We are simulating verilog design without using any libraries 
+We are simulating verilog design without using any libraries  
 
 A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure 
 
-![image](https://github.com/user-attachments/assets/d5202b97-ee5c-4e0e-9eaf-5f3fa733e546)
+![WhatsApp Image 2024-11-24 at 10 50 44_928123e7](https://github.com/user-attachments/assets/299fb2bc-486f-4a71-b7f0-7637382952e9)
 
 ### Fig 5: Selection of Don’t include any libraries
 
@@ -100,6 +105,9 @@ Left side you can see the HDL files. Right side of the window has worklib and sn
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation .
 
 To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation. 
+![WhatsApp Image 2024-11-24 at 11 27 42_063a4fb2](https://github.com/user-attachments/assets/4605f832-2e54-41e6-8545-db1b0a2bb71f)
+
+
 
 ### Fig 6: Nclaunch Window
 
@@ -124,6 +132,8 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Left side select the file and in Tools : launch verilog compiler with current selection will get enable. Click it to compile the code 
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
+![WhatsApp Image 2024-11-24 at 11 27 43_ba79ad90](https://github.com/user-attachments/assets/00023df7-aa6e-4e98-badb-ff71aa401a6a)
+
 
 ### Fig 7: Compiled database in worklib
 
@@ -158,6 +168,8 @@ Outputs: Elaborate database updated in mapped library if successful, generates r
 5.It also establishes net connectivity and prepares all of this for simulation
 
 After elaboration the file will come under snapshot. Select the test bench and simulate it.
+![WhatsApp Image 2024-11-24 at 11 27 43_bacd9105](https://github.com/user-attachments/assets/2ea30208-daef-4de5-9a79-f48a1fe2173b)
+
 
 ## Fig 8: Elaboration Launch Option
 
@@ -172,35 +184,14 @@ Outputs: Simulation log file, waveforms for debugging
 Simulation allow to dump design and test bench signals into a waveform 
 
 Steps for simulation – Run the simulation command with simulator options
+![WhatsApp Image 2024-11-24 at 11 27 43_adb7a3b4](https://github.com/user-attachments/assets/eb6c4cac-e9ed-47e1-b029-22184d319934)
+
+
 
 ## Fig 9: Design Browser window for simulation
+![WhatsApp Image 2024-11-24 at 11 27 44_d41d9095](https://github.com/user-attachments/assets/ca159526-9511-439c-8b94-acfc02945349)
+
+
 
 ## Fig 10:Simulation Waveform Window
-
-## Fig 11:Simulation Waveform Window
-
-### Result
-
-The functionality of a 32-bit ALU was successfully verified using a test bench and simulated with the nclaunch tool.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
+![WhatsApp Image 2024-11-24 at 11 27 44_00f064d2](https://github.com/user-attachments/assets/bf63e24c-5caa-46ea-9379-18a1ff59894f)
